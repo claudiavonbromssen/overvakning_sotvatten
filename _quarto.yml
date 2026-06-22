@@ -1,0 +1,30 @@
+project:
+  type: book
+
+book:
+  title: "Övervakning sötvatten"
+  author: "Norah Jones"
+  date: "20/06/2026"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: Trendsjöar
+      chapters: 
+        - ph_ts.qmd
+        - DIN_ts.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    number-sections: false
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
